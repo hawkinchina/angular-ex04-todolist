@@ -13,14 +13,6 @@ export class TodolistComponent implements OnInit {
     // { title: '学习钢琴', status: 0 },
   ];
 
-  //del
-  del(key: number) {
-    console.log('index: ' + key);
-    console.log(
-      'del:' + this.todolist[key].title + ' ' + this.todolist[key].status
-    );
-  }
-
   // 定义doAdd事件
   doAdd(event: any) {
     console.log(typeof event);
@@ -45,6 +37,11 @@ export class TodolistComponent implements OnInit {
 
   //删除事件
   del(key: number) {
+    // console.log('index: ' + key);
+    // console.log(
+    //   'del:' + this.todolist[key].title + ' ' + this.todolist[key].status
+    // );
+
     this.todolist.splice(key, 1);
   }
 

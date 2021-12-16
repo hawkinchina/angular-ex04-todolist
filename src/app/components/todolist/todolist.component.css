@@ -20,4 +20,25 @@ h3 {
 
 .clear {
   overflow: hidden;
+  padding-left: 0px;
+  background-color: yellow;
+}
+
+.clear li {
+  margin: 5px auto;
+  list-style: none;
+}
+
+.clear input {
+  width: 16px;
+  height: 16px;
+}
+
+.task_input {
+  display: inline-block;
+  float: left;
+}
+.task_button {
+  display: inline-block;
+  float: right;
 }

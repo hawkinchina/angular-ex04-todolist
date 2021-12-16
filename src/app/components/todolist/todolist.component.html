@@ -11,29 +11,29 @@
   <hr />
 
   <h3>代办任务</h3>
-  <ul class="clear" style="background-color:yellow">
+  <ul class="clear">
     <!-- 循环todolist -->
     <li *ngFor="let item of todolist; let key = index">
       <!-- 使用*ngIfh指令判断item.status==0, 显示status==0的item.title -->
       <span *ngIf="item.status == 0">
         <span class="task_input">
           <input type="checkbox" [(ngModel)]="item.status" />{{ item.title }}
-          <button (click)="del(key)" class="task_button">删除</button><br />
         </span>
+        <button (click)="del(key)" class="task_button">删除</button><br />
       </span>
     </li>
   </ul>
 
   <h3>已经完成任务</h3>
-  <ul class="clear" style="background-color:yellow">
+  <ul class="clear">
     <!-- 循环todolist -->
     <li *ngFor="let item of todolist; let key = index">
       <!-- 使用*ngIfh指令判断item.status==1, 显示status==1的item.title -->
       <span *ngIf="item.status == 1">
         <span class="task_input">
           <input type="checkbox" [(ngModel)]="item.status" />{{ item.title }}
-          <button (click)="del(key)" class="task_button">删除</button><br />
         </span>
+        <button (click)="del(key)" class="task_button">删除</button><br />
       </span>
     </li>
   </ul>
