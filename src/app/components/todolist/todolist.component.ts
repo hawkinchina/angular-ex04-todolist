@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class TodolistComponent implements OnInit {
   public keyword: string = '';
   public todolist: any[] = [
-    // { title: '学习游泳', status: 0 },
-    // { title: '学习钢琴', status: 0 },
+    { title: '学习游泳', status: 0 },
+    { title: '学习钢琴', status: 0 },
   ];
 
   // 定义doAdd事件
