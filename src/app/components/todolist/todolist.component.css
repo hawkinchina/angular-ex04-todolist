@@ -7,7 +7,7 @@ h2 {
   margin: 20px auto;
 }
 
-.search input {
+.add_task input {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -19,18 +19,18 @@ h3 {
   background: #eabea9;
 }
 
-.clear {
+.task_ul_list {
   overflow: hidden;
   padding-left: 0px;
   background-color: yellow;
 }
 
-.clear li {
+.task_ul_list li {
   margin: 5px auto;
   list-style: none;
 }
 
-.clear input {
+.task_ul_list input {
   width: 16px;
   height: 16px;
 }

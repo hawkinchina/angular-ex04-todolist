@@ -1,6 +1,6 @@
 <div class="todolist">
   <h2>任务“备忘录”</h2>
-  <div class="search">
+  <div class="add_task">
     <input
       type="text"
       [(ngModel)]="keyword"
@@ -11,7 +11,7 @@
   <hr />
 
   <h3>代办任务</h3>
-  <ul class="clear">
+  <ul class="task_ul_list">
     <!-- 循环todolist -->
     <li *ngFor="let item of todolist; let key = index">
       <!-- 使用*ngIfh指令判断item.status==0, 显示status==0的item.title -->
@@ -25,7 +25,7 @@
   </ul>
 
   <h3>已经完成任务</h3>
-  <ul class="clear">
+  <ul class="task_ul_list">
     <!-- 循环todolist -->
     <li *ngFor="let item of todolist; let key = index">
       <!-- 使用*ngIfh指令判断item.status==1, 显示status==1的item.title -->
