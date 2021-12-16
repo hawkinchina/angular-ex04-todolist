@@ -1,11 +1,22 @@
 <div class="todolist">
   <h2>任务“备忘录”</h2>
   <div class="add_task">
+    <!-- 双向绑定keyword. -->
     <input
       type="text"
       [(ngModel)]="keyword"
       (keydown)="doAdd($event)"
-      placeholder="添加备忘任务"
+      placeholder="添加备忘任务_方式1"
+    />
+
+    <!-- 模板引用变量，获取数据， 不采用事件 -->
+    <!-- 绑定到 Angular 的 keyup.enter 模拟事件。 然后，只有当用户敲回车键时，Angular 才会调用事件处理器。 -->
+    <input
+      #box
+      type="text"
+      (keyup.enter)="doAddwithValue(box.value); box.value = ''"
+      (blur)="doAddwithValue(box.value); box.value = ''"
+      placeholder="添加备忘任务_方式2"
     />
   </div>
   <hr />

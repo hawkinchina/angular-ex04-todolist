@@ -13,11 +13,26 @@ export class TodolistComponent implements OnInit {
     { title: '学习钢琴', status: 0 },
   ];
 
-  // 定义doAdd事件
+  //onEnter 的处理
+  doAddwithValue(taskName: string) {
+    console.log('taskname:' + taskName + 'length:' + taskName.length);
+    if (!taskName) {
+      // alert('不能为空!!!!');
+      return;
+    }
+
+    this.todolist.push({
+      title: taskName,
+      status: 0, //0:表示代办 1: 表示已经完成
+    });
+  }
+
+  // 定义doAdd事件 ()
   doAdd(event: any) {
     console.log(typeof event);
     console.log(event + 'keyCode:' + event.keyCode);
     console.log('target:' + event.target + ' value:' + event.target.value);
+    console.log('keyword:' + this.keyword);
 
     //keyCode = 13, 代表回车键, 接受任务输入。
     if (event.keyCode == 13) {
