@@ -1,3 +1,10 @@
 p {
   font-family: Lato;
 }
+
+.container {
+  width: 80%;
+  background-color: cadetblue;
+  margin-left: auto;
+  margin-right: auto;
+}
