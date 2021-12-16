@@ -4,7 +4,7 @@
     <input
       type="text"
       [(ngModel)]="keyword"
-      (keyup)="doAdd($event)"
+      (keydown)="doAdd($event)"
       placeholder="添加备忘任务"
     />
   </div>

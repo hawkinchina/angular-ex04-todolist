@@ -1,0 +1,23 @@
+.todolist {
+  padding: 15;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.search input {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin-top: 15px;
+  background: #eabea9;
+}
+
+.clear {
+  overflow: hidden;
+}
