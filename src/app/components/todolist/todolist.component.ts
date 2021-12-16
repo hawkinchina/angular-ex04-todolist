@@ -11,7 +11,7 @@ export class TodolistComponent implements OnInit {
   public todolist: any[] = [
     { title: '学习游泳', status: 0 },
     { title: '学习钢琴', status: 0 },
-  ];
+  ]; 
 
   //onEnter 的处理
   doAddwithValue(taskName: string) {
